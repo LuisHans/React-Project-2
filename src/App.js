@@ -10,7 +10,7 @@ const App = () => {
     { text: 'Finish the course!', id: 'g2' }
   ]);
 
-  const addGoalHandler = enteredText => {
+  const addGoalHandler = enteredText => { 
     setCourseGoals(prevGoals => {
       const updatedGoals = [...prevGoals];
       updatedGoals.unshift({ text: enteredText, id: Math.random().toString() });
